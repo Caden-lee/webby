@@ -7,18 +7,30 @@ Background
 */
 .title {
     background-image: url("Toronto Skyline.jpg");
+    color: white;
+    text-align: center;
+}
+.education{
+    background-color: #E0E0DB;
+    color: #253551;
+    text-align: left;
 }
 
 h1 {
-    color: white;
     font-family: 'Nunito Sans', serif;
-    text-align: center;
-    font-size: 8vw;
+    font-size: 3vw;
  }
-
 h2 {
-    color: white;
     font-family: 'Nunito Sans', serif;
-    text-align: center;
-    font-size: 4vw;
+    font-size: 2vw;
+}
+
+h3 {
+    font-family: 'Nunito Sans', serif;
+    font-size: 1vw;
+}
+
+p {
+    font-family: 'Nunito Sans', serif;
+    font-size: 1vw;
 }
