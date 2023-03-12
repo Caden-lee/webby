@@ -1,10 +1,7 @@
-/*
-Alignment
-*/
+body{
+    display: flex;
+}
 
-/*
-Background
-*/
 .title {
     background-image: url("Toronto Skyline.jpg");
     color: white;
