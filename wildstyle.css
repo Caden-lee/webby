@@ -1,5 +1,6 @@
 body{
     display: flex;
+    margin: 0;
 }
 
 .title {
@@ -15,16 +16,16 @@ body{
 
 h1 {
     font-family: 'Nunito Sans', serif;
-    font-size: 3vw;
+    font-size: 4vw;
  }
 h2 {
     font-family: 'Nunito Sans', serif;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 h3 {
     font-family: 'Nunito Sans', serif;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 p {
