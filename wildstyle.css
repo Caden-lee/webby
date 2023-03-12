@@ -1,0 +1,16 @@
+/*
+Alignment
+*/
+
+
+
+.heading1 {
+    color: blue;
+}
+
+h1 {
+    color: black;
+    font-family: 'Nunito Sans', san-serif;
+    text-align: center;
+    font-size: 4vw;
+ }
