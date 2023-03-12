@@ -2,15 +2,23 @@
 Alignment
 */
 
-
-
-.heading1 {
-    color: blue;
+/*
+Background
+*/
+.title {
+    background-image: url("Toronto Skyline.jpg");
 }
 
 h1 {
-    color: black;
-    font-family: 'Nunito Sans', san-serif;
+    color: white;
+    font-family: 'Nunito Sans', serif;
+    text-align: center;
+    font-size: 8vw;
+ }
+
+h2 {
+    color: white;
+    font-family: 'Nunito Sans', serif;
     text-align: center;
     font-size: 4vw;
- }
+}
