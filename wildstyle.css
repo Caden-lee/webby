@@ -46,9 +46,20 @@ ul {
     color: white;
     text-align: center;
 }
-.titletext{
+.titletext {
     padding: 50vh 0;
+
+    animation: fadeIn 3s;
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .education{
     background-color: #E0E0DB;
     color: #253551;
