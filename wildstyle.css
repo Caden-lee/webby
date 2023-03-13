@@ -196,12 +196,28 @@ ul {
 }
 /* Style copy */
 .timeline-date {
-  color: #253551; font-weight: 700;
+  color: #253551; font-weight: 600;
 }
+.timeline-title {
+    color: #253551; font-weight: 800;
+  }
 .timeline-copy {
   color: black !important;
 }
 /* // VERTICAL TIMELINE END // */
+
+.projects{
+    background-color: white;
+    color: #253551;
+    text-align: left;
+    padding: 70px;
+}
+.awards{
+    background-color: #E0E0DB;
+    color: #253551;
+    text-align: left;
+    padding: 70px;
+}
 h1 {
     font-family: 'Nunito Sans', serif;
     font-size: max(50px, 4vw);
