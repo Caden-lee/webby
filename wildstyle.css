@@ -1,5 +1,5 @@
 /* Navigation bar*/
-ul {
+.navigation{
     list-style-type: none;
     margin: 0;
     padding: 0 0;
@@ -7,7 +7,7 @@ ul {
     background-color: #253551;
   }
   
-  li {
+  .navigationbar {
     float: left;
   }
   
@@ -110,7 +110,7 @@ ul {
     padding: 70px;
 }
 .educationimg{
-  height: 14vh;
+  height: 20vh;
 }
 .technicalskills{
     background-color: white;
@@ -289,10 +289,21 @@ p {
     font-family: 'Nunito Sans', serif;
     font-size: max(3px, 1vw);
 }
-table, th, tr{
+table{
+  padding: 30px;
   width: 100%;
   text-align: center;
 }
 td{
   width: 50%
+}
+.technicaltable{
+  padding: 30px;
+  width: 100%;
+  text-align: center ;
+  vertical-align: text-top;
+}
+.technicaltdcol{
+  list-style-type: none;
+  width: 33%;
 }

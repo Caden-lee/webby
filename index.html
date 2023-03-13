@@ -4,11 +4,11 @@
 <link rel="stylesheet" href="wildstyle.css">
 </head>
 <body>
-    <ul> 
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+    <ul class = 'navigation'> 
+        <li class = 'navigationbar'><a class="active" href="#home">Home</a></li>
+        <li class = 'navigationbar'><a href="#news">News</a></li>
+        <li class = 'navigationbar'><a href="#contact">Contact</a></li>
+        <li class = 'navigationbar'><a href="#about">About</a></li>
     </ul>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
@@ -24,8 +24,8 @@
     </div>
     <div class = "education">
         <h2>Education</h2>
-        <hr>
         <br>
+        <hr>
         <table>
                 <tr> 
                     <td> 
@@ -42,24 +42,52 @@
                     </td> 
                 </tr> 
         </table>
-
-
-
-
-        <!-- <div class = "educationtext">
-            <h3>University of British Columbia</h3>
-            <p> Bachelor of Applied Science Co-op - Mechanical Engineering</p>
-        </div>
         <br>
-        <div class = "educationtext">
-            <h3>Crescent School</h3>
-            <p>Ontario Secondary School Diploma</p>   
-        </div> -->
     </div>
     <div class = "technicalskills">
         <h2>Technical Skills</h2>
         <hr>
         <br>
+        <table class = 'technicaltable'>
+            <tr> 
+                <td class = 'technicaltdcol'> 
+                    <h3>Software</h3>
+                    <ul style = "list-style-type: none ;">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SolidWorks</li>
+                        <li>Fusion360</li>
+                        <li>HSMWorks</li>
+                    </ul>
+                </td>
+                <td class = 'technicaltdcol'> 
+                    <h3>Hardware</h3>
+                    <ul style = "list-style-type: none ;">
+                        <li>Breadboard</li>
+                        <li>Oscilloscopes</li>
+                        <li>Multimeter</li>
+                        <li>Soldering</li>
+                        <br>
+                        <br>
+                        <br>
+                    </ul> 
+                </td>
+                <td class = 'technicaltdcol'>
+                    <h3>Manufacturing</h3>
+                    <ul style = "list-style-type: none ;">
+                        <li>Bench Lathe</li>
+                        <li>Manual Mill</li>
+                        <li>CNC Mill</li>
+                        <li>CNC Router</li>
+                        <br>
+                        <br>
+                        <br>
+                    </ul> 
+                </td> 
+            </tr> 
+    </table>
     </div>
     <div class = "experience">
         <h2>Work Experience</h2>
