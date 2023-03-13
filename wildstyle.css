@@ -264,7 +264,12 @@
     text-align: left;
     padding: 70px;
 }
-
+.footer{
+  background-color: #343434;
+    color: white;
+    text-align: center;
+    padding: 70px;
+}
 
 h1 {
     font-family: 'Nunito Sans', serif;
@@ -282,7 +287,7 @@ h3 {
 h4 {
   font-family: 'Nunito Sans', serif;
   font-size: max(5px, 1vw);
-  color: grey;
+  color: #343434;;
 }
 
 p {
