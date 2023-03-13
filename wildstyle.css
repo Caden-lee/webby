@@ -53,23 +53,24 @@ ul {
     background-color: #E0E0DB;
     color: #253551;
     text-align: left;
+    padding: 70px;
 }
 
 h1 {
     font-family: 'Nunito Sans', serif;
-    font-size: 4vw;
+    font-size: max(50px, 4vw);
  }
 h2 {
     font-family: 'Nunito Sans', serif;
-    font-size: 2.5vw;
+    font-size: max(2px, 2.5vw);
 }
 
 h3 {
     font-family: 'Nunito Sans', serif;
-    font-size: 2vw;
+    font-size: max(15px, 2vw);
 }
 
 p {
     font-family: 'Nunito Sans', serif;
-    font-size: 1.5vw;
+    font-size: max(3px, 1.5vw);
 }
