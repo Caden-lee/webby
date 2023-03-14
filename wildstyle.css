@@ -16,10 +16,13 @@
     text-decoration: none;
   }
 
-  /* .emailButton {
+  .emailButton {
     border: none;
     background: none;
-  } */
+  }
+  .emailButton:hover {
+    cursor: pointer;
+  }
 .buttonlabel{
   color: white;
   text-decoration: none;
