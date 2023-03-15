@@ -14,6 +14,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
   }
 
   .emailButton {
@@ -28,75 +29,6 @@
   text-decoration: none;
 }
 
-
-.dotnav-right {
-  right: 10px;
-  top: 50%;
-  margin-top: -50px;
-  height: 100px;
-  z-index: 999;
-  position: fixed;
-}
-
-.dotnav {
-  padding: 0;
-  list-style: none;
-  font-size: 0.001px;
-}
-.dotnav > li {
-  display: inline-block;
-  font-size: 1rem;
-  vertical-align: top;
-}
-.dotnav > li:nth-child(n+2) {
-  margin-left: 15px;
-}
-
-.dotnav > li > a {
-  display: inline-block;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 2px solid #66ccff;
-  vertical-align: top;
-  overflow: hidden;
-  padding: 0;
-  text-indent: -999%;
-}
-.dotnav > li > a:hover,
-.dotnav > li > a:focus {
-  background: #66ccff;
-  outline: none;
-}
-.dotnav > li > a:active {
-  background: #66ccff;
-}
-.dotnav > li.active > a {
-  background: #66ccff;
-}
-.dotnav-vertical > li {
-  display: block;
-  margin-right:10px;
-}
-.dotnav-vertical > li:nth-child(n+2) {
-  margin-left: 0;
-  margin-top: 10px;
-}
-.awesome-tooltip + .tooltip > .tooltip-inner {
-  background-color: #66ccff; 
-  color: #fff; 
-  border: 1px solid #66ccff; 
-}
-.awesome-tooltip + .tooltip.left > .tooltip-arrow{
-  top:50%;
-  right:0;
-  margin-top:-5px;
-  border-top:5px solid transparent;
-  border-bottom:5px solid transparent;
-  border-left:5px solid #66ccff;
-}
 
   /* Scroll Arrow Pointing Down Start */
 
@@ -369,6 +301,154 @@ table-layout: fixed;
     text-align: left;
     padding: 70px;
     height: 100vh;
+}
+
+.wrap
+{
+  margin:50px auto 0 auto;
+  width:100%;
+  display:flex;
+  align-items:space-around;
+/*   max-width:1200px; */
+}
+.tile
+{
+  width:380px;
+  height:500px;
+  margin:10px;
+  background-color:#4D4D4D;
+  display:inline-block;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  overflow:hidden;
+  color:white;
+  border-radius: 50px;
+}
+.tile img
+{
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: all 0.4s ease-out;
+}
+.tile .text
+{
+/*   z-index:99; */
+  position:absolute;
+  padding:30px;
+  height:calc(100% - 60px);
+}
+.tile h1
+{
+  font-weight:300;
+  margin: 0 0 0;
+/*   margin:0; */
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.tile h2
+{
+  font-weight:100;
+  margin: 75% 0 0 0;
+  font-style:italic;
+/*    transform: translateX(200px); */
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px);
+}
+.tile p
+{
+  font-weight:300;
+  margin:20px 0 0 0;
+  line-height: 25px;
+/*   opacity:0; */
+/*   transform: translateX(-200px);
+  transition-delay: 0.2s; */
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px);
+}
+.animate-text
+{
+  opacity:0;
+  transition: all 0.6s linear;
+}
+.tile:hover
+{
+/*   background-color:#99aeff; */
+box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+  transform:scale(1.05);
+}
+.tile:hover img
+{
+  opacity: 0.2;
+}
+.tile:hover .animate-text
+{
+  transform:translateX(0);
+  opacity:1;
+}
+.dots
+{
+  position:absolute;
+  bottom:20px;
+  right:30px;
+  margin: 0 auto;
+  width:30px;
+  height:30px;
+  color:currentColor;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  
+}
+
+.dots span
+{
+    width: 5px;
+    height:5px;
+    background-color: currentColor;
+    border-radius: 50%;
+    display:block;
+  opacity:0;
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px);
+ 
+}
+
+.tile:hover span
+{
+  opacity:1;
+  transform:translateY(0px);
+}
+
+.dots span:nth-child(1)
+{
+   transition-delay: 0.05s;
+}
+.dots span:nth-child(2)
+{
+   transition-delay: 0.1s;
+}
+.dots span:nth-child(3)
+{
+   transition-delay: 0.15s;
+}
+
+.projecttiles{
+  width: 100%;
+  table-layout: fixed;
+}
+
+@media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
 }
 
 .awards{
