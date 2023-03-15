@@ -1,25 +1,39 @@
 /* Navigation bar*/
-.navigation{
-    list-style-type: none;
-    margin: 0;
-    padding: 0 0;
-    overflow: hidden;
-    /* background: rgba(0,0,0,0) */
-  }
   
   .navigationbar {
     float: right;
+    display: flex;
+    color: #253551;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px 50px;
+    text-decoration: none;
+    
+  }
+  .navigationbarleft {
+    float: left;
     display: block;
     color: #253551;
     text-align: center;
-    padding: 14px 16px;
+    padding-top: 50px;
+    padding-left: 50px;
     text-decoration: none;
-    
+  }
+  .navigationbarleft .linkedin {
+    padding-left: 20px;
   }
 
   .emailButton {
     border: none;
     background: none;
+    display: flex;
+    color: #253551;
+    text-align: center;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight:bold;
+    font-size: 18px;
+
   }
   .emailButton:hover {
     cursor: pointer;
@@ -296,7 +310,7 @@ table-layout: fixed;
 /* // VERTICAL TIMELINE END // */
 
 .projects{
-    background-color: white;
+    background-color: rgb(85, 82, 82);
     color: #253551;
     text-align: left;
     padding: 70px;
@@ -322,7 +336,7 @@ table-layout: fixed;
   position:relative;
   cursor:pointer;
   transition: all 0.4s ease-out;
-  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.75);
   overflow:hidden;
   color:white;
   border-radius: 50px;
@@ -379,7 +393,7 @@ table-layout: fixed;
 .tile:hover
 {
 /*   background-color:#99aeff; */
-box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.5);
   transform:scale(1.05);
 }
 .tile:hover img
@@ -390,34 +404,6 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 {
   transform:translateX(0);
   opacity:1;
-}
-.dots
-{
-  position:absolute;
-  bottom:20px;
-  right:30px;
-  margin: 0 auto;
-  width:30px;
-  height:30px;
-  color:currentColor;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:space-around;
-  
-}
-
-.dots span
-{
-    width: 5px;
-    height:5px;
-    background-color: currentColor;
-    border-radius: 50%;
-    display:block;
-  opacity:0;
-  transition: transform 0.4s ease-out, opacity 0.5s ease;
-  transform: translateY(30px);
- 
 }
 
 .tile:hover span
