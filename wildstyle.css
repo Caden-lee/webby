@@ -42,10 +42,7 @@
   color: white;
   text-decoration: none;
 }
-
-
   /* Scroll Arrow Pointing Down Start */
-
   .scroll-down {
     position: absolute;
     left: 50%;
@@ -111,16 +108,9 @@
 .titletext {
     padding: 50vh 0;
 
-    animation: fadeIn 3s;
+    animation: fadeIn 2s;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 table{
 border-width: 10px;
 table-layout: fixed;
@@ -163,6 +153,10 @@ table-layout: fixed;
     padding: 70px;
     height: 100vh;
 }
+.left-to-right-animation{
+  animation: right_to_left 2s;
+}
+
 .educationimg{
   height: 20vh;
   
@@ -266,6 +260,7 @@ table-layout: fixed;
   position: relative;
   border-radius: 6px;
  }
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
 /* Place the timelime to the left */
@@ -323,7 +318,6 @@ table-layout: fixed;
   width:100%;
   display:flex;
   align-items:space-around;
-/*   max-width:1200px; */
 }
 .tile
 {
@@ -353,7 +347,6 @@ table-layout: fixed;
 }
 .tile .text
 {
-/*   z-index:99; */
   position:absolute;
   padding:30px;
   height:calc(100% - 60px);
@@ -362,7 +355,6 @@ table-layout: fixed;
 {
   font-weight:300;
   margin: 0 0 0;
-/*   margin:0; */
   text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 .tile h2
@@ -370,7 +362,6 @@ table-layout: fixed;
   font-weight:100;
   margin: 75% 0 0 0;
   font-style:italic;
-/*    transform: translateX(200px); */
   transition: transform 0.4s ease-out, opacity 0.5s ease;
   transform: translateY(30px);
 }
@@ -379,8 +370,6 @@ table-layout: fixed;
   font-weight:300;
   margin:20px 0 0 0;
   line-height: 25px;
-/*   opacity:0; */
-/*   transform: translateX(-200px);
   transition-delay: 0.2s; */
   transition: transform 0.4s ease-out, opacity 0.5s ease;
   transform: translateY(30px);
@@ -392,7 +381,6 @@ table-layout: fixed;
 }
 .tile:hover
 {
-/*   background-color:#99aeff; */
 box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.5);
   transform:scale(1.05);
 }
@@ -437,12 +425,41 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.5);
   }
 }
 
-.awards{
-    background-color: #E0E0DB;
+.aboutme{
+    /* background-color: rgb(85, 82, 82); */
+    background: rgb(98,98,98);
+    background: radial-gradient(circle, rgba(98,98,98,1) 28%, rgba(52,52,52,1) 100%);
     color: #253551;
     text-align: left;
     padding: 70px;
     height: 100vh;
+}
+.aboutmetile{
+  width: 45%;
+  height:65%;
+  margin-top: 5%;
+  margin-left: -150px ;
+  background-color: rgba(0,0,0,0.77);
+  display:inline-block;
+  background-size:cover;
+  position:absolute;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.75);
+  overflow:hidden;
+  color:white;
+  border-radius: 50px;
+}
+.itemtiles{
+  width: 800px;
+  height:150px;
+  margin-bottom: 80px;
+  margin-right: -70px;
+  background-color: rgba(0,0,0,0.77);
+  background-size:cover;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.75);
+  overflow:hidden;
+  color:white;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
 }
 .footer{
   background-color: #343434;
@@ -495,4 +512,22 @@ td{
 .technicalimg{
   width: 50%;
   height: 50%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes right_to_left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
 }
