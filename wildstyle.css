@@ -146,13 +146,6 @@ table-layout: fixed;
   
 }
 
-.education{
-    background-color: #E0E0DB;
-    color: #253551;
-    text-align: left;
-    padding: 70px;
-    height: 100vh;
-}
 .left-to-right-animation{
   animation: right_to_left 2s;
 }
@@ -169,147 +162,21 @@ table-layout: fixed;
     height: 100vh;
 }
 .experience{
-    background-color: #253551;
+    background-color: rgba(0,0,0,0.77);
     color: white;
     text-align: left;
     padding: 70px;
     height: 100vh;
 }
-/* // VERTICAL TIMELINE // */
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  box-sizing: border-box;
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-/* Container around content */
-.timeline-container {
-  box-sizing: border-box;
-  padding: 10px 50px;
-  position: relative;
-  background-color: #253551;
-  width: 50%;
-}
-/* The circles on the timeline */
-.timeline-container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: #E0E0DB;
-  border: 4px solid #eb8d31;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-/* Place the container to the left */
-.timeline-left {
-  left: 0;
-}
-/* Place the container to the right */
-.timeline-right {
-  left: 50%;
-}
-/* Add arrows to the left container (pointing right) */
-.timeline-left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-/* Add arrows to the right container (pointing left) */
-.timeline-right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-/* Fix the circle for containers on the right side */
-.timeline-right::after {
-  left: -16px;
-}
-/* The actual content */
-.timeline-content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
- }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-/* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-/* Full-width containers */
-  .timeline-container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-/* Make sure that all arrows are pointing leftwards */
-  .timeline-container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-/* Make sure all circles are at the same spot */
-  .timeline-left::after {
-    left: 15px;
-  }
-  .timeline-right::after {
-    left: 15px;
-  }
-/* Make all right containers behave like the left ones */
-  .timeline-right {
-    left: 0px;
-  }
-}
-/* Style copy */
-.timeline-date {
-  color: #253551; font-weight: 600;
-}
-.timeline-title {
-    color: #253551; font-weight: 800;
-  }
-.timeline-copy {
-  color: black !important;
-}
-/* // VERTICAL TIMELINE END // */
 
 .projects{
-    background-color: rgb(85, 82, 82);
+    background-color: rgba(0,0,0,0.77);
     color: #253551;
     text-align: left;
     padding: 70px;
-    height: 100vh;
+    min-height: 100vh;
+
 }
 
 .wrap
@@ -317,15 +184,15 @@ table-layout: fixed;
   margin:50px auto 0 auto;
   width:100%;
   display:flex;
-  align-items:space-around;
+  flex-wrap: wrap;
+  /* align-items:space-around; */
 }
 .tile
 {
-  width:380px;
-  height:500px;
+  width:350px;
+  height:450px;
   margin:10px;
   background-color:#4D4D4D;
-  display:inline-block;
   background-size:cover;
   position:relative;
   cursor:pointer;
@@ -333,7 +200,7 @@ table-layout: fixed;
   box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.75);
   overflow:hidden;
   color:white;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 .tile img
 {
@@ -370,7 +237,7 @@ table-layout: fixed;
   font-weight:300;
   margin:20px 0 0 0;
   line-height: 25px;
-  transition-delay: 0.2s; */
+  transition-delay: 0.2s;
   transition: transform 0.4s ease-out, opacity 0.5s ease;
   transform: translateY(30px);
 }
@@ -400,22 +267,10 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.5);
   transform:translateY(0px);
 }
 
-.dots span:nth-child(1)
-{
-   transition-delay: 0.05s;
-}
-.dots span:nth-child(2)
-{
-   transition-delay: 0.1s;
-}
-.dots span:nth-child(3)
-{
-   transition-delay: 0.15s;
-}
-
 .projecttiles{
-  width: 100%;
-  table-layout: fixed;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
 }
 
 @media (max-width: 1000px) {
@@ -427,57 +282,56 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.5);
 
 .aboutme{
     /* background-color: rgb(85, 82, 82); */
-    background: rgb(98,98,98);
-    background: radial-gradient(circle, rgba(98,98,98,1) 28%, rgba(52,52,52,1) 100%);
+    background: rgba(0,0,0,0.77);
     color: #253551;
     text-align: left;
     padding: 70px;
     height: 100vh;
+    /* padding-right: 500px; */
 }
 .aboutmetile{
-  width: 45%;
+  /* width: 45%; */
   height:65%;
   margin-top: 5%;
-  margin-left: -150px ;
+  /* margin-left: -150px ; */
   background-color: rgba(0,0,0,0.77);
   display:inline-block;
   background-size:cover;
-  position:absolute;
+  float: right;
   box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.75);
   overflow:hidden;
   color:white;
   border-radius: 50px;
+  max-width: 750px;
+  min-width: 250px;
+  max-height: 750px;
 }
-.itemtiles{
-  width: 800px;
-  height: 125px;
-
-  background-color: rgba(0,0,0,0.77);
-  background-size:cover;
-  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.75);
-  overflow:hidden;
-  color:white;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
+.skilldescrip{
+   width: 45%;
+   height:70%;
+   margin-top: 5%;
+   margin-left: -150px ;
+   background-color: rgba(0,0,0,0.77);
+   display:flex;
+   background-size:cover;
+   box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.75);
+   overflow:hidden;
+   color:white;
+   border-radius: 25px;
+   max-width: 750px;
+   min-width: 500px;
+   max-height: 750px;
 }
-.chungus{
-  position: relative;
-  top: 50px;
-  grid-template-columns: auto auto auto;
-  justify-content: space-between;
-  display: flex;
-  width: 80%; 
-  margin: auto;
-}
-.skilltile-grid{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  width: 25%;
-  gap: 25px;
+.skilltileholder{
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  display:flex;
+  align-items: center;
   justify-content: center;
-  overflow-wrap: break-word;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-
 
 .skilltile {
   width: 100px;
@@ -487,12 +341,20 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.5);
   box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.75);
   color:white;
   font-size: 13px;
-  border-radius: 25px;
+  border-radius: 20px;
   transition: all 0.2s ease-in-out;
   display: flex;
   justify-content: center;
-  align-items: bottom;
+  
 }
+.skilltile:nth-child(2){
+  align-self: flex-end;
+}
+.skilltile:nth-child(4){
+  align-self: flex-end;
+}
+
+
 .skilltile:hover{
   transform: scale(1.1,1.1);
 
@@ -504,7 +366,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.5);
 }
 
 .footer{
-  background-color: #343434;
+  background-color: #253551;
     color: white;
     text-align: center;
     padding: 70px;
